@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="css/template.css">
     <link rel="icon" type="imagem/png" href="img/icon.png">
     <title>Flexbox - MediCenter</title>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -19,6 +30,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">BLOG</a></li>
@@ -78,8 +94,75 @@
                         <div class="widget_title_text">Latest News</div>
                         <div class="widget_title_bar"></div>
                     </div>
-                    <div class="widget_body">
-                        
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="">
+                                <div class="news_date">
+                                    <div class="news_posted_at">01 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="img/dr.jpg" alt="Doutor">
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat valum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus omare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_date">
+                                    <div class="news_posted_at">01 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="img/dr.jpg" alt="Doutor">
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat valum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus omare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_date">
+                                    <div class="news_posted_at">01 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="img/dr.jpg" alt="Doutor">
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat valum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus omare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                                <div class="news_date">
+                                    <div class="news_posted_at">01 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="img/dr.jpg" alt="Doutor">
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amat valum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus omare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                </div>
+                            </a>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -108,7 +191,7 @@
                         <div class="opening"><p>By phone:</p>
                             <p>(510) 210-5225</p>
                         </div>
-                        <div class="opening"><p>Online Booking:</p>
+                        <div class="opening"><p>by e-mail:</p>
                             <p>boking@mediacenter.com</p>
                         </div>
                         <div class="opening"><p>Twitter</p>
@@ -119,5 +202,100 @@
             </aside>
         </div>
     </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <h1>Health Insurance</h1>
+                    <a href="">Here in medicenter we have individual &rarr;</a>
+                </div>
+                <div class="fm_2">
+                    <h1>Medical Records</h1>
+                    <a href="">Here in medicenter we have individual &rarr;</a>
+                </div>
+                <div class="fm_3">
+                    <h1>Online Bills Pay</h1>
+                    <a href="">here in medicenter we have individual &rarr;</a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_1">
+                            <div>
+                                Mauris adipiscing mauris fringilla turpis interdum<br> sed pulvinar nisi malesuada individual.
+                            </div>
+                            <div class="contact">
+                                <div>
+                                    <br>
+                                    Medicenter Clinic<br>
+                                    33 Fariane Street<br>
+                                    Keilor East<br>
+                                    VIC 3033, Australia
+                                </div>
+                                <div>
+                                    <br><br>
+                                    +123 655 655<br>
+                                    +123 755 755<br>
+                                    medicenter@mail.com
+                                </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_2">
+                            <div>
+                                &rarr; Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
+                                <p>6 years ago</p>
+                            </div>
+                            <div>
+                                &rarr; Lorem ipsum dolor sit amat velum.
+                                <p>6 years ago</p>
+                            </div>
+                            <div>
+                                &rarr; Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
+                                <p>6 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_3">
+                            <div>
+                                &rarr; We've released new version (v1.2) of our #CleanMate #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <span style="color: #ffffff;">t.co/tYVkhmpb30</span>
+                                <p>4 days ago</p>
+                            </div>
+                            <div>
+                                &rarr; We've released new version (v5.1) of our #Timetable #Responsive #Schedule #WP Plugin. Please check at #CodeCanyon <span style="color: #ffffff;">t.colwUTmgd2ato</span>
+                                <p>6 days ago</p>
+                            </div>
+                            <div>
+                                &rarr; We've released new version (v5.0) of our #Timetable Responsive #Schedule #WP Plugin with #booking and pdf Hexport. <span style="color: #ffffff;">Lo/FwvKmJcDoC</span>
+                                <p>7 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                &copy; Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
